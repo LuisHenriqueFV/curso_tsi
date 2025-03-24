@@ -1,0 +1,29 @@
+.loader-container {
+    width: 200px;
+    height: 15px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.loader-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #af4c4c; 
+    transition: width 0.5s;
+    animation: loadAnimation 5s linear infinite paused;
+}
+
+.loader-container:hover .loader-bar {
+    width: 100%;
+    animation-play-state: running;
+}
+
+@keyframes loadAnimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

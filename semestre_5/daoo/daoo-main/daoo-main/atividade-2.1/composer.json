@@ -1,0 +1,15 @@
+{
+  "name": "lh/atividade-2.1",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Luis Henrique Fonseca Victoria",
+      "email": "luishenriquefonsecavictoria.dev@gmail.com"
+    }
+  ],
+  "require": {}
+}

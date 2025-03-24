@@ -1,0 +1,82 @@
+.container{
+    border: 10px double green;
+    width: 560px;
+    height: 380px;
+  }
+  
+  .goblin-down{
+    background-image: url(./goblin_big.png);
+    width: 160px;
+    height: 180px;
+    animation: gd-sprite 1s forwards step-end;
+  }
+  
+  .goblin-right{
+    background-image: url(./goblin_big.png);
+    width: 160px;
+    height: 180px;
+    animation: gr-sprite 2s forwards step-end 1s;
+    opacity: 0;
+  }
+  
+  .goblin-up{
+    background-image: url(./goblin_big.png);
+    width: 160px;
+    height: 180px;
+    animation: gu-sprite 1s forwards step-end 3s;
+    opacity: 0;
+  }
+  
+  .goblin-left{
+    background-image: url(./goblin_big.png);
+    width: 160px;
+    height: 180px;
+    animation: gl-sprite 2s forwards step-end 4s;
+    opacity: 0;
+  }
+  
+  @keyframes gd-sprite{
+    0%{background-position: 0px 0px;transform: translateY(0px);}
+    20%{background-position: -160px 0px;transform: translateY(50px);}
+    40%{background-position: -320px 0px;transform: translateY(100px);}
+    60%{background-position: -160px 0px;transform: translateY(150px);}
+    80%{background-position: -320px 0px;transform: translateY(200px);}
+    100%{opacity: 0;}
+  }
+  
+  @keyframes gr-sprite{
+    0%{opacity: 1; background-position: 0px 0px; transform: translate(0px, 30px);}
+    10%{background-position: -160px 350px;transform: translate(50px, 30px);}
+    20%{background-position: -320px 350px;transform: translate(100px, 30px);}
+    30%{background-position: -160px 350px;transform: translate(150px, 30px);}
+    40%{background-position: -320px 350px;transform: translate(200px, 30px);}
+    50%{background-position: -160px 350px;transform: translate(250px, 30px);}
+    60%{background-position: -320px 350px;transform: translate(300px, 30px);}
+    70%{background-position: -160px 350px;transform: translate(350px, 30px);}
+    80%{background-position: -320px 350px;transform: translate(400px, 30px);}
+    100%{opacity: 0;}
+  }
+  
+  @keyframes gu-sprite{
+    0%{opacity: 1;background-position: 0px 540px;transform: translate(400px, -160px);}
+    20%{background-position: -160px 540px;transform: translate(400px, -210px);}
+    40%{background-position: -320px 540px;transform: translate(400px, -260px);}
+    60%{background-position: -160px 540px;transform: translate(400px, -310px);}
+    80%{background-position: -320px 540px;transform: translate(400px, -370px);}
+    100%{opacity: 0;}
+  }
+  
+  @keyframes gl-sprite{
+    0%{opacity: 1; background-position: 0px 170px; transform: translate(400px, -540px);}
+    10%{background-position: 0px 170px;transform: translate(350px, -540px);}
+    20%{background-position: 160px 170px;transform: translate(300px, -540px);}
+    30%{background-position: 320px 170px;transform: translate(250px, -540px);}
+    40%{background-position: 160px 170px;transform: translate(200px, -540px);}
+    50%{background-position: 320px 170px;transform: translate(150px, -540px);}
+    60%{background-position: 160px 170px;transform: translate(100px, -540px);}
+    70%{background-position: 320px 170px;transform: translate(50px, -540px);}
+    80%{background-position: 160px 170px;transform: translate(0px, -540px);}
+    90%{background-position: 0px 0px;transform: translate(0px, -540px);}
+    100%{opacity: 0;}
+  }
+  

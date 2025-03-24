@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border: dotted 3px;
+}
+.container:hover .spinner {
+    animation: spinner 1s linear infinite;
+}
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 12px solid black;
+    border-top-color: grey;
+    border-radius: 100%;
+}
+.spinner:hover{
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

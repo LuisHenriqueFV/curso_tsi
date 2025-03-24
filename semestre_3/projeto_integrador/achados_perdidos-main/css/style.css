@@ -1,0 +1,405 @@
+/* Reset de estilos padrão e configurações globais */
+
+
+body {
+  height: auto;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(var(--cor-background));
+}
+
+html {
+  height: auto;
+}
+
+
+main {
+  height: auto;
+  margin-bottom: 8%;
+}
+
+* {
+  font-family: 'Montserrat Alternates', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Cores e variáveis globais */
+
+.custom-color {
+  background-color: #FFF;
+  color: #000;
+}
+
+.custom-color:hover {
+  background-color: #f1f1f1;
+}
+
+:root {
+  --cor-background: #616FF2, #D6A6F2;
+  --cor-background-navbar: #06138550;
+  --cor-background-card: #ffffff;
+  --cor-footer: #616FF2;
+  --cor-btn-custom-backgraund: #F2D261;
+  --cor-btn-custom-backgraund-hover: #f2f261;
+  --cor-botao-texto: #000000;
+  --cor-botao-hover-texto: #000000;
+  --cor-custom-button-fundo: #6170f200;
+  --cor-custom-button-hover-fundo: #b161f200;
+  --cor-custom-button-texto: #ffffff;
+  --cor-texto-titulo: #000000;
+  --cor-border: #000000;
+  --cor-texto-link: #ffffff;
+  --cor-texto-link-hover: #dadfe9;
+  --cor-border-active: #F2D261;
+  --cor-hover-underline: #F2D261;
+  --cor-backgraund-container: #fff;
+  --cor-backgraund-conteudo-Perfil: #fff;
+
+  --dark-btn-custom-backgraund: #F2C161;
+  --dark-btn-custom-backgraund-hover: #D5AA55;
+  --dark-background: #1a1a1a;
+  --dark-text: #000000;
+  --dark-text-white: #fff;
+  --dark-link: #ffffff;
+  --dark-background-card: #38373791;
+  --dark-card-text: #ffffff;
+  --dark-footer: #38373791;
+  --dark-footer-text: #fff;
+  --dark-conteudo-Perfil: #38373791;
+  --dark-conteudo-Cadastro: #38373791;
+}
+
+
+.card {
+  background-color: var(--cor-background-card);
+  color: var(--cor-texto-titulo);
+
+
+}
+
+#achados_perdidos {
+  color: var(--cor-btn-custom-backgraund);
+}
+#filtro > div > div {
+  justify-content: center;
+}
+
+
+.btn-custom-color h5 {
+  padding-top: 4px;
+  color: var(--cor-footer);
+  text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em
+}
+
+
+
+
+/* Estilos para botões personalizados */
+
+.btn-custom-color {
+  background-color: var(--cor-btn-custom-backgraund);
+  color: var(--cor-botao-texto);
+  text-align: center;
+}
+
+.btn-custom-color:hover {
+  background-color: var(--cor-btn-custom-backgraund-hover);
+  color: var(--cor-botao-hover-texto);
+}
+
+
+#customButton {
+  width: 50px;
+  background-color: var(--cor-custom-button-fundo);
+  color: var(--cor-custom-button-texto);
+}
+
+#customButton:hover {
+  background-color: var(--cor-custom-button-hover-fundo);
+}
+
+/* Estilos para o footer */
+
+#footer {
+
+  background-color: var(--cor-footer);
+  color: var(--cor-texto-titulo);
+  width: 100%;
+  border-top: 3px solid var(--cor-border);
+  padding: 20px;
+}
+
+#footer a {
+  color: var(--cor-texto-link);
+
+}
+
+#footer p {
+  color: white;
+}
+
+
+/* Estilos para textos no centro */
+
+.text-center h1 {
+  font-size: 24px;
+  color: var(--cor-texto-titulo);
+  text-shadow: #616FF2 0.1em 0.1em 0.2em;
+
+}
+
+/* DARK THEME*/
+body.dark-theme {
+  background: var(--dark-background);
+  color: var(--dark-text);
+}
+
+.dark-theme .btn-custom-color {
+  background-color: var(--dark-btn-custom-backgraund);
+}
+
+.dark-theme .btn-custom-color:hover {
+  background-color: var(--dark-btn-custom-backgraund-hover);
+}
+
+.dark-theme .card {
+  background-color: var(--dark-background-card);
+  color: var(--dark-card-text);
+}
+
+
+
+.dark-theme #footer {
+  background-color: var(--dark-footer);
+  color: var(--dark-footer-text);
+}
+
+.dark-theme #footer a {
+  color: var(--dark-link);
+}
+
+
+
+.dark-theme .h2 {
+  color: var(--dark-text-white);
+}
+
+.dark-theme .inputs-forms {
+  color: var(--dark-text-white);
+
+}
+
+body.dark-theme #conteudoPerfil {
+  background-color: var(--dark-conteudo-Perfil);
+
+}
+
+body.dark-theme #conteudoCadastro {
+  background-color: var(--dark-conteudo-Cadastro);
+  color: var(--dark-text-white);
+}
+
+body.dark-theme #conteudoMinhasInformacoes {
+  background-color: var(--dark-conteudo-Cadastro);
+  color: var(--dark-text-white);
+}
+
+
+/* Seção: Conteúdo da Página */
+
+#conteudoIndex {
+  margin-top: 6%;
+  height: auto;
+}
+
+#filtro {
+  padding: 0;
+  margin-top: 3%;
+  height: auto;
+}
+
+#conteudoContato>form {
+  width: auto;
+  height: auto;
+  margin-top: 2%;
+}
+
+#conteudoPerfil {
+  height: auto;
+  width: auto;
+  background-color: var(--cor-backgraund-conteudo-Perfil);
+  border-radius: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+}
+
+#conteudoUsuario {
+  height: auto;
+  width: 100%;
+  background-color: var(--cor-backgraund-conteudo-Perfil);
+  border-radius: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+}
+
+.dark-theme #conteudoUsuario {
+  background-color: var(--dark-background-card);
+}
+
+
+#loginContainer>div {
+  height: auto;
+}
+
+
+#conteudoRegistro {
+  background-color: var(--cor-backgraund-container);
+  width: 400px;
+  height: auto;
+  padding: 20px;
+  margin-top: 10%;
+  border-radius: 20px;
+  margin-bottom: 15%;
+}
+
+#conteudo {
+  margin-top: 2%;
+  height: auto;
+}
+
+#conteudoCadastro {
+  padding: 20px;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 30%;
+  border-radius: 10px;
+  background-color: var(--cor-backgraund-container);
+}
+
+
+.custom-file-input {
+  display: none;
+}
+
+.custom-file-upload {
+  height: 50px;
+  width: 100px;
+  background-color: #616FF2;
+  color: #FFF;
+  display: flex;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+#conteudoMinhasInformacoes {
+  padding-top: 20px;
+  width: auto;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 30%;
+  border-radius: 10px;
+  background-color: var(--cor-backgraund-container);
+}
+
+/* Seção: Footer */
+
+footer {
+  position: relative;
+  left: 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+/* Seção: Formulários e Container */
+
+
+.form-container {
+  padding: 1rem;
+  /* margin: auto; */
+  background: var(--cor-backgraund-container);
+  border-radius: 20px;
+}
+
+.dark-theme .form-container {
+  background-color: var(--dark-background-card);
+  color: var(--dark-text-white);
+}
+
+
+
+
+/* Seção: Página de Login */
+
+
+#loginContainer {
+  width: 350px;
+  height: 100vh;
+  margin-top: 7%;
+
+
+}
+
+
+
+/* Seção: Contêiner Personalizado */
+#customContainer {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+/* Seção: Opções do Menu */
+.options-menu {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-right: 10px;
+}
+
+.options-menu.visible {
+  display: block;
+}
+
+.options-menu a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.options-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Seção: Imagem Personalizada */
+.custom-img {
+  width: 60%;
+  height: auto;
+  margin: 150px auto 0 auto;
+}
+
+
+
+@media (max-width: 991px) {
+  .dropdown.text-end {
+    margin-top: 1%;
+    margin-right: 92%;
+  }
+
+}
